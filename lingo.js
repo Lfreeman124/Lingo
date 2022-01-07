@@ -62,13 +62,20 @@ const g5l4 = document.getElementById("g5-l4");
 const g5l5 = document.getElementById("g5-l5");
 
 const colorChange = (guess, answer) => {
+  let answerArrayRemaining = answerArray;
   if (guess.value.toLowerCase() === answer) {
     guess.style.backgroundColor = "green";
-  } else if (answerArray.includes(guess.value.toLowerCase())) {
+    let i = answerArray.indexOf(answer);
+    answerArrayRemaining.splice(i, 1);
+  } else if (answerArrayRemaining.includes(guess.value.toLowerCase())) {
     guess.style.backgroundColor = "yellow";
+    let i = answerArray.indexOf(guess.value.toLowerCase());
+    answerArrayRemaining.splice(i, 1);
   } else {
     guess.style.backgroundColor = "white";
   }
+  console.log(answerArrayRemaining);
+  console.log(answerArray);
 };
 
 document.addEventListener("keypress", function (e) {
