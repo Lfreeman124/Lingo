@@ -8,8 +8,8 @@ h1 {
 }
 
 .game {
-  height: 700px;
-  width: 600px;
+  height: 500px;
+  width: 350px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -21,26 +21,26 @@ h1 {
 
 .game div {
   border: 1px black solid;
-  height: 100px;
-  width: 500px;
+  height: 80px;
+  width: 350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .game input {
-  font-size: 80px;
+  font-size: 20px;
   width: 80%;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .answer {
-  font-size: 80px;
+  font-size: 20px;
   text-transform: uppercase;
   border: 1px black solid;
-  height: 100px;
-  width: 500px;
+  height: 80px;
+  width: 350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
