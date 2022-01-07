@@ -62,20 +62,13 @@ const g5l4 = document.getElementById("g5-l4");
 const g5l5 = document.getElementById("g5-l5");
 
 const colorChange = (guess, answer) => {
-  let answerArrayRemaining = answerArray;
   if (guess.value.toLowerCase() === answer) {
     guess.style.backgroundColor = "green";
-    let i = answerArray.indexOf(answer);
-    answerArrayRemaining.splice(i, 1);
-  } else if (answerArrayRemaining.includes(guess.value.toLowerCase())) {
+  } else if (answerArray.includes(guess.value.toLowerCase())) {
     guess.style.backgroundColor = "yellow";
-    let i = answerArray.indexOf(guess.value.toLowerCase());
-    answerArrayRemaining.splice(i, 1);
   } else {
     guess.style.backgroundColor = "white";
   }
-  console.log(answerArrayRemaining);
-  console.log(answerArray);
 };
 
 document.addEventListener("keypress", function (e) {
@@ -94,11 +87,11 @@ document.addEventListener("keypress", function (e) {
         g1l5.value === a5
       ) {
         console.log("winner");
-        al1.innerText = a1;
-        al2.innerText = a2;
-        al3.innerText = a3;
-        al4.innerText = a4;
-        al5.innerText = a5;
+        al1.textContent = a1;
+        al2.textContent = a2;
+        al3.textContent = a3;
+        al4.textContent = a4;
+        al5.textContent = a5;
       }
       document.getElementById("g2-l1").focus();
     } else if (document.activeElement.id === "g2-l5") {
@@ -115,11 +108,11 @@ document.addEventListener("keypress", function (e) {
         g2l5.value === a5
       ) {
         console.log("winner");
-        al1.innerText = a1;
-        al2.innerText = a2;
-        al3.innerText = a3;
-        al4.innerText = a4;
-        al5.innerText = a5;
+        al1.textContent = a1;
+        al2.textContent = a2;
+        al3.textContent = a3;
+        al4.textContent = a4;
+        al5.textContent = a5;
       }
       document.getElementById("g3-l1").focus();
     } else if (document.activeElement.id === "g3-l5") {
@@ -136,11 +129,11 @@ document.addEventListener("keypress", function (e) {
         g3l5.value === a5
       ) {
         console.log("winner");
-        al1.innerText = a1;
-        al2.innerText = a2;
-        al3.innerText = a3;
-        al4.innerText = a4;
-        al5.innerText = a5;
+        al1.textContent = a1;
+        al2.textContent = a2;
+        al3.textContent = a3;
+        al4.textContent = a4;
+        al5.textContent = a5;
       }
       document.getElementById("g4-l1").focus();
     } else if (document.activeElement.id === "g4-l5") {
@@ -157,11 +150,11 @@ document.addEventListener("keypress", function (e) {
         g4l5.value === a5
       ) {
         console.log("winner");
-        al1.innerText = a1;
-        al2.innerText = a2;
-        al3.innerText = a3;
-        al4.innerText = a4;
-        al5.innerText = a5;
+        al1.textContent = a1;
+        al2.textContent = a2;
+        al3.textContent = a3;
+        al4.textContent = a4;
+        al5.textContent = a5;
       }
       document.getElementById("g5-l1").focus();
     } else if (document.activeElement.id === "g5-l5") {
@@ -178,11 +171,11 @@ document.addEventListener("keypress", function (e) {
         g5l5.value === a5
       ) {
         console.log("winner");
-        al1.innerText = a1;
-        al2.innerText = a2;
-        al3.innerText = a3;
-        al4.innerText = a4;
-        al5.innerText = a5;
+        al1.textContent = a1;
+        al2.textContent = a2;
+        al3.textContent = a3;
+        al4.textContent = a4;
+        al5.textContent = a5;
       }
     }
   }
