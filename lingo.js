@@ -11,6 +11,9 @@ const words = [
   "large",
 ];
 
+const green = "hsla(172, 53%, 28%, 1)";
+const yellow = "hsla(47, 100%, 68%, 1)";
+const cream = "hsla(47, 90%, 90%, 1)";
 // Generate a random 5-letter word
 let randomWord = words[Math.floor(Math.random() * words.length)];
 
@@ -63,11 +66,11 @@ const g5l5 = document.getElementById("g5-l5");
 
 const colorChange = (guess, answer) => {
   if (guess.value.toLowerCase() === answer) {
-    guess.style.backgroundColor = "green";
+    guess.style.backgroundColor = green;
   } else if (answerArray.includes(guess.value.toLowerCase())) {
-    guess.style.backgroundColor = "yellow";
+    guess.style.backgroundColor = yellow;
   } else {
-    guess.style.backgroundColor = "white";
+    guess.style.backgroundColor = cream;
   }
 };
 
@@ -171,12 +174,12 @@ document.addEventListener("keypress", function (e) {
         g5l5.value === a5
       ) {
         console.log("winner");
-        al1.textContent = a1;
-        al2.textContent = a2;
-        al3.textContent = a3;
-        al4.textContent = a4;
-        al5.textContent = a5;
       }
+      al1.textContent = a1;
+      al2.textContent = a2;
+      al3.textContent = a3;
+      al4.textContent = a4;
+      al5.textContent = a5;
     }
   }
 });

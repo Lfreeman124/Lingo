@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="lingo.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+    </style>
   </head>
   <body>
     <header>
-      <h1>Smith's Lingo</h1>
+      <h1>Smith's Wordle</h1>
     </header>
     <section class="game">
       <div class="g1">
@@ -218,13 +221,13 @@
           style="text-transform: uppercase"
         />
       </div>
-      <div class="answer">
-        <div id="a-l1">?</div>
-        <div id="a-l2">?</div>
-        <div id="a-l3">?</div>
-        <div id="a-l4">?</div>
-        <div id="a-l5">?</div>
-      </div>
+      <section class="answer">
+        <p id="a-l1">?</p>
+        <p id="a-l2">?</p>
+        <p id="a-l3">?</p>
+        <p id="a-l4">?</p>
+        <p id="a-l5">?</p>
+      </section>
     </section>
     <button onClick="window.location.reload();">Play Again</button>
 
