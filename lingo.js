@@ -175,6 +175,7 @@ document.addEventListener("keypress", function (e) {
       ) {
         console.log("winner");
       }
+      console.log("loser");
       al1.textContent = a1;
       al2.textContent = a2;
       al3.textContent = a3;

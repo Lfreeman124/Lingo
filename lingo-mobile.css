@@ -28,14 +28,14 @@ html {
 }
 
 header {
-  height: 10rem;
+  height: 8rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 1rem;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 1rem 2rem;
   background-color: var(--clr-cream);
   border: 1px black solid;
@@ -56,7 +56,7 @@ h1 {
 }
 
 .game div {
-  height: 10rem;
+  height: 7rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -74,7 +74,7 @@ h1 {
 }
 .answer {
   margin-top: 1rem;
-  height: 10rem;
+  height: 8rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
