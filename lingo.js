@@ -14,7 +14,7 @@ const words = [
   "event",
   "group",
   "issue",
-  "house!,
+  "house",
   "money",
   "novel",
   "order",
@@ -34,7 +34,7 @@ const words = [
   "count",
   "focus",
   "match",
-  "relax"
+  "relax",
 ];
 
 const green = "hsla(172, 53%, 28%, 1)";
