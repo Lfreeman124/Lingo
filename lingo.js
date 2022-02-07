@@ -17,7 +17,6 @@ const cream = "hsla(47, 90%, 90%, 1)";
 // Generate a random 5-letter word
 let randomWord = words[Math.floor(Math.random() * words.length)];
 
-console.log(randomWord);
 // Make an array of the answer
 const answerArray = randomWord.split("");
 
@@ -89,7 +88,6 @@ document.addEventListener("keypress", function (e) {
         g1l4.value === a4 &&
         g1l5.value === a5
       ) {
-        console.log("winner");
         al1.textContent = a1;
         al2.textContent = a2;
         al3.textContent = a3;
@@ -110,7 +108,6 @@ document.addEventListener("keypress", function (e) {
         g2l4.value === a4 &&
         g2l5.value === a5
       ) {
-        console.log("winner");
         al1.textContent = a1;
         al2.textContent = a2;
         al3.textContent = a3;
@@ -131,7 +128,6 @@ document.addEventListener("keypress", function (e) {
         g3l4.value === a4 &&
         g3l5.value === a5
       ) {
-        console.log("winner");
         al1.textContent = a1;
         al2.textContent = a2;
         al3.textContent = a3;
@@ -152,7 +148,6 @@ document.addEventListener("keypress", function (e) {
         g4l4.value === a4 &&
         g4l5.value === a5
       ) {
-        console.log("winner");
         al1.textContent = a1;
         al2.textContent = a2;
         al3.textContent = a3;
@@ -173,9 +168,7 @@ document.addEventListener("keypress", function (e) {
         g5l4.value === a4 &&
         g5l5.value === a5
       ) {
-        console.log("winner");
       }
-      console.log("loser");
       al1.textContent = a1;
       al2.textContent = a2;
       al3.textContent = a3;
